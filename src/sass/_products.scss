@@ -1,0 +1,135 @@
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+}
+
+.products {
+    display: block;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-top: 127px;
+    padding-bottom: 119px;
+    padding-right: 116px;
+    padding-left: 117px;
+}
+
+.products-title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 259px;
+    font-family: $title-font;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: $pink-lite-color;
+
+  & .underline {
+    font-size: 58px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $pink-color;
+  }
+}
+
+.products-list {
+    display: flex;
+    flex-direction: row;
+    
+
+ & .products-item {
+    width: 30%;
+    max-height: 525px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    text-align: center;
+ }
+
+}
+
+  .pink {
+    background-color: $bg-pink-color;
+  }
+
+  .brown {
+    background-color: #F0D1A5;
+  }
+
+  .green {
+      background-color: #C2E297;
+  }
+
+  .item-title {
+    margin-bottom: 32px;
+    padding-top: 163px;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $white-font-color;
+  }
+
+  .group {
+      height: 6px;
+  }
+
+.item-paragraph {
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: $text-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $white-font-color;
+}
+
+.image {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    transform: translateY(-60%);
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    margin-top: 62px;
+    padding-top: 5px;
+    background-color: $white-font-color;
+    border-radius: 50%;
+    border: transparent;
+}
+
+#Capa_1 {
+    fill: $hover-color;
+}
