@@ -14,6 +14,12 @@
     padding-bottom: 173px;
     overflow: visible;
   }
+
+  //   для ПК
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+    padding-bottom: 292px;
+  }
 }
 
 .container--size {
@@ -39,6 +45,19 @@
       top: -7px;
       left: 307px;
     }
+
+    @media screen and (min-width: 1280px) {
+      width: 538px;
+      height: 538px;
+
+      top: 15px;
+      left: 475px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-right: 100px;
+    padding-left: 46px;
   }
 }
 
@@ -58,6 +77,16 @@
 
     z-index: 5;
     position: relative;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    // justify-content: flex-start;
+    margin-bottom: 84px;
+
+    // z-index: 5;
+    // position: relative;
   }
 }
 
@@ -93,6 +122,14 @@
 
 .menu__svg-close {
   display: block;
+}
+
+.menu {
+  display: block;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .menu-openMob {
@@ -154,8 +191,35 @@
   }
 }
 
+.logo {
+  margin-right: 110px;
+}
+
 .menu-list {
   @extend %list-reset;
+}
+
+.menu-list__pc {
+  @extend %list-reset;
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.menu-list__item-pc {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
 }
 
 .menu-list__item {
@@ -182,6 +246,20 @@
   }
 }
 
+.menu-list__link-pc {
+  font-family: $text-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-decoration: none;
+  color: $white-font-color;
+  transition: color 250ms linear;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
 .menu-list__link {
   font-family: $text-font;
   font-weight: 700;
@@ -189,6 +267,8 @@
   line-height: 1.29;
   text-decoration: none;
   color: $white-font-color;
+  transition: color 250ms linear;
+
   &:hover {
     color: $hover-color;
   }
@@ -212,6 +292,9 @@
   }
 
   @media screen and (min-width: 1280px) {
+    position: relative;
+    left: 69px;
+
     margin-bottom: 25px;
 
     font-size: 58px;
@@ -236,6 +319,9 @@
   }
 
   @media screen and (min-width: 1280px) {
+    position: relative;
+    left: 69px;
+
     font-size: 38px;
     line-height: 1.16;
   }
@@ -244,6 +330,11 @@
 .btn-block {
   display: flex;
   flex-direction: row;
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    left: 69px;
+  }
 }
 
 .btn {
@@ -257,6 +348,19 @@
   background: none;
   border: none;
   border-radius: 20px;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    padding: 11px 34px;
+
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 1.29;
+
+    background: none;
+    border: none;
+    border-radius: 20px;
+  }
 }
 
 .btn-products {
@@ -264,11 +368,20 @@
 
   color: $white-font-color;
   background: $pink-color;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 17px;
+  }
 }
 
 .btn-instruction {
   color: $pink-color;
   background: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .center-text {
@@ -286,6 +399,11 @@
     bottom: -173px;
     right: 213px;
   }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -292px;
+    right: 450px;
+  }
 }
 
 .girl-pic {
@@ -296,6 +414,14 @@
     position: absolute;
     bottom: -173px;
     right: 34px;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    bottom: -292px;
+    right: 109px;
     z-index: 1;
   }
 }
@@ -310,6 +436,14 @@
     left: 34px;
     z-index: 1;
   }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    bottom: -247px;
+    left: 77px;
+    z-index: 1;
+  }
 }
 
 .menu-wrapper__div {
@@ -318,6 +452,11 @@
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    margin-left: 110px;
   }
 }
 
@@ -367,7 +506,6 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-
     bottom: -145px;
     left: 154px;
 
@@ -378,10 +516,15 @@
   @media screen and (min-width: 1280px) {
     display: block;
     width: 200px;
+
+    bottom: -235px;
+    left: 295px;
   }
 }
 // Текст возле кувшина
 .jug-description__text {
+  margin: 0;
+
   @media screen and (min-width: 768px) {
     font-family: $text-font;
     font-weight: 400;
@@ -410,16 +553,39 @@
     font-size: 14px;
     line-height: 1.4;
     color: $white-font-color;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      background-image: url('../images/header-pointer.svg');
+      background-size: 6px 6px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 20px;
+    }
   }
 }
 
 // Кол-во кафе и кофе-траков
 .header-quantity {
   display: none;
+
   @media screen and (min-width: 768px) {
     position: absolute;
     right: 34px;
     top: 65px;
+
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    right: 97px;
+    top: 118px;
 
     display: block;
   }
