@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container container--size">
     <div class="menu-wrapper">
-      <img src="./images/logo.png" alt="Логотип" />
+      <a href="#"> <img src="./images/logo.png" alt="Логотип" /> </a>
       <div class="menu">
         <button class="menu-openMob" type="button" data-modal-open>
           <svg class="menu__svg" width="20" height="12">
@@ -43,6 +43,31 @@
       ice cream <br />
       made with</span
     >
-    <h1 class="header__title">passion</h1>
+
+    <div class="center-text">
+      <h1 class="header__title">passion</h1>
+
+      <div class="btn-block">
+        <button type="button" class="btn btn-products">Products</button>
+        <button type="button" class="btn btn-instruction">
+          How it’s made?
+        </button>
+      </div>
+    </div>
+
+    <picture>
+      <source
+        srcset="./images/header-pic1.png 1x, ./images/header-pic1@2x.png 2x"
+      />
+
+      <img
+        class="icecream-pic"
+        src="./images/header-pic1.png"
+        alt="Мороженное"
+        aria-label="Мороженное"
+        width="171"
+        height="410"
+      />
+    </picture>
   </div>
 </header>
