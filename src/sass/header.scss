@@ -1,0 +1,126 @@
+.header {
+  position: relative;
+
+  padding-top: 6px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 502px;
+  background: #ffb8ca;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-container {
+  //   display: none;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 502px;
+  width: 250px;
+  background: #e17992;
+
+  padding-top: 60px;
+  padding-left: 21px;
+}
+
+.menu-container.is-hidden {
+  display: none;
+}
+
+.menu__svg-close {
+  display: block;
+}
+
+.menu-openMob {
+  border: none;
+  background: transparent;
+}
+
+.menu-mobClose {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+
+  border: none;
+  background: transparent;
+}
+
+.button-open {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 11px 50px;
+  margin-bottom: 19px;
+
+  border: none;
+  border-radius: 22px;
+  color: #d41443;
+  background: #ffffff;
+  font-family: $text-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  &::after {
+    content: '';
+    display: block;
+    background: url('../images/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7px;
+    height: 10px;
+    margin-left: 30px;
+  }
+}
+
+.menu-list {
+  @extend %list-reset;
+}
+
+.menu-list__item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #e18298;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+
+.menu-list__link {
+  font-family: $text-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  text-decoration: none;
+  color: $white-font-color;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.header__title {
+  margin: 0;
+  font-family: $title-font;
+  font-size: 48px;
+  line-height: 1.15;
+  color: $pink-color;
+}
+
+.header__upper-title {
+  margin: 0;
+
+  font-family: $title-font;
+  font-size: 26px;
+  line-height: 1.15;
+  color: $white-font-color;
+}
