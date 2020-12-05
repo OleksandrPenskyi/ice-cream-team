@@ -60,17 +60,125 @@
       </div>
     </div>
 
+    <!-- Морожка -->
     <picture>
+      <!-- Для ПК -->
       <source
-        srcset="./images/header-pic1.png 1x, ./images/header-pic1@2x.png 2x"
+        srcset="
+          ./images/header-ice-pc@1x.png 1x,
+          ./images/header-ice-pc@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+
+      <!-- Для планшета -->
+      <source
+        srcset="
+          ./images/header-ice-tablet@1x.png 1x,
+          ./images/header-ice-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <!-- Для телефона -->
+      <source
+        srcset="
+          ./images/header-ice-mobile@1x.png 1x,
+          ./images/header-ice-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
       />
 
       <img
         class="icecream-pic"
-        src="./images/header-pic1.png"
+        src="./images/header-ice-mobile@1x.png"
         alt="Мороженное"
         aria-label="Мороженное"
       />
     </picture>
+
+    <!-- Girl -->
+    <picture>
+      <!-- Для ПК -->
+      <source
+        srcset="
+          ./images/header-girl-pc@1x.png 1x,
+          ./images/header-girl-pc@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+
+      <!-- Для планшета -->
+      <source
+        srcset="
+          ./images/header-girl-tablet@1x.png 1x,
+          ./images/header-girl-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <img
+        class="girl-pic"
+        src="./images/header-girl-tablet@1x.png"
+        alt="Девушка кушает мороженое"
+        aria-label="Девушка кушает мороженое"
+      />
+    </picture>
+
+    <!-- Кувшин -->
+    <picture>
+      <!-- Для ПК -->
+      <source
+        srcset="
+          ./images/header-jug-pc@1x.png 1x,
+          ./images/header-jug-pc@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+
+      <!-- Для планшета -->
+      <source
+        srcset="
+          ./images/header-jug-tablet@1x.png 1x,
+          ./images/header-jug-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <img
+        class="jug-pic"
+        src="./images/header-jug-tablet@1x.png"
+        alt="Кувшин"
+        aria-label="Кувшин"
+      />
+    </picture>
+
+    <!-- Текст возле кувшина -->
+    <div class="jug-description">
+      <p class="jug-description__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+    </div>
+
+    <!-- Кол-во кафе -->
+    <div class="header-quantity">
+      <div class="cafe-number">
+        <span class="count">16</span>
+        <span class="description">cafes</span>
+      </div>
+      <!-- Кол-во траков -->
+      <div class="truck-number">
+        <span class="count">23</span>
+        <span class="description">food trucks</span>
+      </div>
+    </div>
   </div>
 </header>
