@@ -185,10 +185,29 @@
   color: $pink-color;
   border-radius: 22px;
   border: none;
+  transition: color 200ms linear, background-color 200ms linear,
+    fill 200ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+    color: #fff;
+  }
+
+  &:hover .cow-svg,
+  &:focus .cow-svg {
+    fill: #fff;
+  }
 }
 
 .cow-description__btn-svg {
   margin-left: 15px;
+}
+
+.cow-svg {
+  width: 10px;
+  height: 10px;
+  fill: $hover-color;
 }
 
 .cow-numbers__wrapper {
