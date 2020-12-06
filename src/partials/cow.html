@@ -1,52 +1,83 @@
 <section class="cow">
   <div class="container">
-    <h3 class="top-title">tradition and love</h3>
+    <span class="cow__upper-title">tradition and love</span>
+    <h2 class="cow__title">how it’s made?</h2>
 
-    <h2 class="middle-title">how it’s made?</h2>
+    <picture>
+      <!-- для ПК -->
+      <source
+        srcset="./images/cow-pc@1x.png 1x, ./images/cow-pc@2x.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
 
-    <img class="cow-picture" src="./images/section-cow.png" alt="Корова" />
-    <div class="dl">
-      <p class="top-text">
+      <!-- для планшета -->
+      <source
+        srcset="./images/cow-tablet@1x.png 1x, ./images/cow-tablet@2x.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <!-- для телефона -->
+      <source
+        srcset="./images/cow-mobile@1x.png 1x, ./images/cow-mobile@2x.png 2x"
+        media="(min-width: 320px)"
+        type="image/png"
+      />
+
+      <img
+        class="cow__pic"
+        src="./images/cow-mobile@1x.png"
+        alt="Фото коровы"
+        aria-label="Фото коровы"
+      />
+    </picture>
+
+    <div class="cow-description cow-description--size">
+      <p class="cow-description__upper-text">
         Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
         cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
         justo fringilla.
       </p>
 
-      <p class="middle-text">
+      <p class="cow-description__bottom-text">
         Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
         Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
         suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt. Aliquam erat volutpat. Aenean accumsan.
+        tincidunt. <br /><br />Aliquam erat volutpat. Aenean accumsan.
       </p>
 
-      <button class="read">
-        Read more<svg class="pic" width="5" height="8">
+      <button class="cow-description__btn">
+        Read more<svg class="cow-description__btn-svg" width="5" height="8">
           <use href="./images/symbol-defs55.svg#icon-Vector-1"></use>
         </svg>
       </button>
     </div>
-    <img src="./images/icon1.png" />
 
-    <span class="number-one">721</span>
+    <div class="cow-numbers__wrapper">
+      <div class="cow-numbers cow-numbers--size">
+        <img class="cow-numbers__img" src="./images/icon1.png" />
+        <span class="cow-numbers__number">721</span>
+        <p class="cow-numbers__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </div>
 
-    <p class="bottom-textone">
-      Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-    </p>
+      <div class="cow-numbers cow-numbers--size">
+        <img class="cow-numbers__img" src="./images/icon2.png" />
+        <span class="cow-numbers__number">16kg</span>
+        <p class="cow-numbers__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </div>
 
-    <img src="./images/icon2.png" />
-
-    <span class="number-two">16kg</span>
-
-    <p class="bottom-texttwo">
-      Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-    </p>
-
-    <img src="./images/icon3.png" />
-
-    <span class="number-three">84</span>
-
-    <p class="bottom-textthree">
-      Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-    </p>
+      <div class="cow-numbers cow-numbers--size">
+        <img class="cow-numbers__img" src="./images/icon3.png" />
+        <span class="cow-numbers__number">84</span>
+        <p class="cow-numbers__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </div>
+    </div>
   </div>
 </section>

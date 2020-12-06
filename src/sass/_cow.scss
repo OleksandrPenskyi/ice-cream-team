@@ -4,20 +4,25 @@
   background: $bg-lite-pink-color;
 }
 
-.top-title {
+.cow__upper-title {
+  display: block;
+  margin-bottom: 15px;
+
+  text-align: center;
+
   font-family: $title-font;
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.1;
-  text-align: center;
   text-transform: uppercase;
-  margin-top: 125px;
-  margin-bottom: 15px;
   color: $pink-lite-color;
 }
 
-.middle-title {
+.cow__title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 26px;
+
   font-family: $title-font;
   font-style: normal;
   font-weight: normal;
@@ -27,47 +32,47 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $pink-color;
-  margin-top: 0;
-  margin-bottom: 26px;
 }
 
-.top-text {
+.cow__pic {
+  margin-bottom: 46px;
+}
+
+.cow-description--size {
+  padding: 0 30px;
+  margin-bottom: 39px;
+}
+
+.cow-description__upper-text {
+  margin: 0;
+  margin-bottom: 47px;
+
   font-family: $text-font;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.62;
   color: $black-font-color;
-  margin-top: 46px;
-  margin-bottom: 47px;
 }
 
-.middle-text {
+.cow-description__bottom-text {
+  margin: 0;
+  margin-bottom: 47px;
+
   font-family: $text-font;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
   color: $grey-font-color;
-  margin-top: 0;
-  margin-bottom: 47px;
 }
 
-.read {
-  width: 176px;
-  height: 44px;
-  padding-left: 37px;
-  padding-right: 56px;
+.cow-description__btn {
+  padding: 13px 37px;
 
   font-family: $text-font;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 39px;
 
   background: $white-font-color;
   color: $pink-color;
@@ -75,106 +80,41 @@
   border: none;
 }
 
-.number-one {
-  width: 98px;
-  height: 56px;
-  margin-top: 20px;
-  margin-bottom: 0;
+.cow-description__btn-svg {
+  margin-left: 15px;
+}
+
+.cow-numbers--size {
+  padding-right: 50px;
+
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+.cow-numbers__img {
+  margin-bottom: 16px;
+}
+
+.cow-numbers__number {
+  display: block;
+  margin-bottom: 25px;
 
   font-family: $title-font;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 36px;
-  line-height: 41px;
+  line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $hover-color;
 }
 
-.bottom-textone {
-  width: 230px;
-  height: 36px;
-  margin-bottom: 38px;
+.cow-numbers__text {
+  margin: 0;
 
   font-family: $text-font;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
-
   color: $black-font-color;
-}
-
-.number-two {
-  width: 98px;
-  height: 56px;
-  margin-top: 20px;
-  margin-bottom: 0;
-
-  font-family: $title-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $pink-color;
-}
-
-.bottom-texttwo {
-  width: 230px;
-  height: 36px;
-  margin-bottom: 38px;
-
-  font-family: $text-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1.7;
-
-  color: $black-font-color;
-}
-
-.number-three {
-  width: 98px;
-  height: 56px;
-  margin-top: 20px;
-  margin-bottom: 0;
-
-  font-family: $title-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: $pink-color;
-}
-
-.bottom-textthree {
-  width: 230px;
-  height: 36px;
-  margin-bottom: 67px;
-
-  font-family: $text-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1.7;
-
-  color: $black-font-color;
-}
-
-.dl {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 220px;
-}
-
-.pic {
-  margin-left: 14px;
 }
