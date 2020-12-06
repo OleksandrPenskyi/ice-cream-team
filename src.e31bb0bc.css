@@ -1065,7 +1065,7 @@ a {
   color: #ffffff;
   transition: color 250ms linear;
 }
-.menu-list__link-pc:hover {
+.menu-list__link-pc:hover, .menu-list__link-pc:focus {
   color: #d41443;
 }
 
@@ -1078,7 +1078,7 @@ a {
   color: #ffffff;
   transition: color 250ms linear;
 }
-.menu-list__link:hover {
+.menu-list__link:hover, .menu-list__link:focus {
   color: #d41443;
 }
 
@@ -1170,6 +1170,7 @@ a {
 
 .btn-products {
   margin-right: 8px;
+  transition: color 250ms linear, background-color 250ms linear;
   color: #ffffff;
   background: #d41443;
 }
@@ -1178,16 +1179,25 @@ a {
     margin-right: 17px;
   }
 }
+.btn-products:hover, .btn-products:focus {
+  color: #d41443;
+  background-color: #fff;
+}
 
 .btn-instruction {
   color: #d41443;
   background: #ffffff;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 @media screen and (min-width: 1280px) {
   .btn-instruction {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+.btn-instruction:hover, .btn-instruction:focus {
+  color: #fff;
+  background-color: #d41443;
 }
 
 .center-text {
@@ -1291,6 +1301,7 @@ a {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+    transition: color 200ms linear, background-color 200ms linear;
   }
   .menu-wrapper__button::after {
     content: "";
@@ -1302,6 +1313,21 @@ a {
     width: 7px;
     height: 10px;
     margin-left: 15px;
+  }
+  .menu-wrapper__button:hover::after, .menu-wrapper__button:focus::after {
+    content: "";
+    display: inline-block;
+    background: url("/arrow-white.06acb568.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    margin-left: 7px;
+  }
+  .menu-wrapper__button:hover, .menu-wrapper__button:focus {
+    background-color: #d41443;
+    color: #ffffff;
   }
 }
 

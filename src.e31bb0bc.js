@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\Group36.png":[["Group36.ea61b45f.png","images/Group36.png"],"images/Group36.png"],"./..\\images\\Group27.png":[["Group27.14155db0.png","images/Group27.png"],"images/Group27.png"],"./..\\images\\Group26.png":[["Group26.dafe4d8d.png","images/Group26.png"],"images/Group26.png"],"./..\\images\\arrow.svg":[["arrow.305c14c2.svg","images/arrow.svg"],"images/arrow.svg"],"./..\\images\\header-pointer.svg":[["header-pointer.3f9d492b.svg","images/header-pointer.svg"],"images/header-pointer.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\Group36.png":[["Group36.ea61b45f.png","images/Group36.png"],"images/Group36.png"],"./..\\images\\Group27.png":[["Group27.14155db0.png","images/Group27.png"],"images/Group27.png"],"./..\\images\\Group26.png":[["Group26.dafe4d8d.png","images/Group26.png"],"images/Group26.png"],"./..\\images\\arrow.svg":[["arrow.305c14c2.svg","images/arrow.svg"],"images/arrow.svg"],"./..\\images\\arrow-white.svg":[["arrow-white.06acb568.svg","images/arrow-white.svg"],"images/arrow-white.svg"],"./..\\images\\header-pointer.svg":[["header-pointer.3f9d492b.svg","images/header-pointer.svg"],"images/header-pointer.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -235,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58237" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59465" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
