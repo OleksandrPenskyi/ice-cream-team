@@ -8,19 +8,19 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  // !для мобильного
+  //!для мобильного
   @media screen and (max-width: 767px) {
     width: 320px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  // !для планшета
+  //!для планшета
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
-  // !для ПК
+  //!для ПК
   @media screen and (min-width: 1280px) {
     width: 1280px;
     padding-left: 112px;
