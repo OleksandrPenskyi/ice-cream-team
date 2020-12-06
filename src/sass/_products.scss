@@ -20,49 +20,121 @@ p {
 .products {
     display: block;
     margin: 0 auto;
-    max-width: 1280px;
-    padding-top: 127px;
-    padding-bottom: 119px;
-    padding-right: 116px;
-    padding-left: 117px;
+    max-width: 320px;
+    padding-top: 121px;
+    padding-bottom: 98px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      padding-top: 122px;
+      padding-bottom: 112px;
+      padding-right: 34px;
+      padding-left: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      padding-top: 127px;
+      padding-bottom: 119px;
+      padding-right: 116px;
+      padding-left: 117px;
+    }
 }
 
 .products-title {
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 259px;
-    font-family: $title-font;
+    color: $pink-lite-color;
+    
+    @media screen and (min-width: 768px) {
+      line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
-    text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
-    color: $pink-lite-color;
-
+    }
   & .underline {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 144px;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $pink-color;
+
+    @media screen and (min-width: 768px) {
+     margin-bottom: 150px;
+     font-size: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+    margin-bottom: 259px;
     font-size: 58px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.06em;
-
-    color: $pink-color;
+    }
   }
 }
 
 .products-list {
+    
+    @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    }
     
 
- & .products-item {
-    width: 30%;
-    max-height: 525px;
+  .products-item {
+    position: relative;
+    width: 100%;
+    
     border-radius: 24px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 50px;
+    margin-bottom: 130px;
+    padding-top: 161px;
+    padding-bottom: 41px;
+    padding-right: 40px;
+    padding-left: 40px;
     text-align: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 32%;
+      padding-top: 152px;
+      padding-bottom: 40px;
+      padding-right: 11px;
+      padding-left: 11px;
+      margin-bottom: 0;
+      &:first-child {
+      margin-left: 0;
+      }
+      &:last-child {
+      margin-right: 0;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-right: 44px;
+      padding-left: 44px;
+      padding-top: 163px;
+      padding-bottom: 50px;
+      max-height: 525px;
+    }
  }
 
 }
@@ -80,54 +152,95 @@ p {
   }
 
   .item-title {
+  margin-bottom: 30px;
+  
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-font-color;
+
+  @media screen and (min-width: 768px) {
+    
+  }
+
+   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
-    padding-top: 163px;
-    font-family: $title-font;
-    font-weight: 400;
     font-size: 30px;
     line-height: 1.13;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    color: $white-font-color;
+   }
   }
 
   .group {
+      display: block;
+      width: 100%;
       height: 6px;
+      margin: 0 auto;
   }
 
 .item-paragraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: $text-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $white-font-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      line-height: 1.77;
+    }
+
+    @media screen and (min-width: 1280px) {
     margin-top: 32px;
     margin-bottom: 0;
-    padding-right: 30px;
-    padding-left: 30px;
-    font-family: $text-font;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.75;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: $white-font-color;
+  }
+    
 }
 
 .image {
-    display: block;
-    height: auto;
-    max-width: 100%;
     position: absolute;
-    transform: translateY(-60%);
+    display: block;
+    width: 249px;
+    height: 252px;
+    transform: translateY(-107%) translateX(-25px);
+
+    @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 226px;
+    transform: translateY(-114%) translateX(-10px);
+  }
+    @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    transform: translateY(-115%) translateX(-43px);
+  }
+    
 }
 
 .button {
     width: 40px;
     height: 40px;
-    margin-top: 62px;
     padding-top: 5px;
+    
     background-color: $white-font-color;
     border-radius: 50%;
     border: transparent;
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 62px;
+      
+    }
 }
 
 #Capa_1 {
