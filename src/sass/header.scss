@@ -263,7 +263,8 @@
   color: $white-font-color;
   transition: color 250ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $hover-color;
   }
 }
@@ -277,7 +278,8 @@
   color: $white-font-color;
   transition: color 250ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $hover-color;
   }
 }
@@ -374,11 +376,19 @@
 .btn-products {
   margin-right: 8px;
 
+  transition: color 250ms linear, background-color 250ms linear;
+
   color: $white-font-color;
   background: $pink-color;
 
   @media screen and (min-width: 1280px) {
     margin-right: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+    background-color: #fff;
   }
 }
 
@@ -386,9 +396,17 @@
   color: $pink-color;
   background: #ffffff;
 
+  transition: color 250ms linear, background-color 250ms linear;
+
   @media screen and (min-width: 1280px) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $hover-color;
   }
 }
 
@@ -468,13 +486,6 @@
   }
 }
 
-// .menu-wrapper__btn {
-//   display: none;
-//   @media screen and (min-width: 768px) {
-//     display: block;
-//   }
-// }
-
 .menu-wrapper__button {
   display: none;
 
@@ -493,6 +504,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+    transition: color 200ms linear, background-color 200ms linear;
 
     &::after {
       content: '';
@@ -504,6 +516,26 @@
       width: 7px;
       height: 10px;
       margin-left: 15px;
+      // transition: color 2250ms linear, background-color 2250ms linear;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      content: '';
+      display: inline-block;
+      background: url('../images/arrow-white.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+      margin-left: 7px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+      color: $white-font-color;
     }
   }
 }
