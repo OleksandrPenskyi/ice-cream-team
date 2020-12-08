@@ -188,16 +188,47 @@
   transition: color 200ms linear, background-color 200ms linear,
     fill 200ms linear;
 
+  &::after {
+    content: '';
+    display: inline-block;
+    background: url('../images/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7px;
+    height: 10px;
+    margin-left: 13px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    content: '';
+    display: inline-block;
+    background: url('../images/arrow-white.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7px;
+    height: 10px;
+    margin-left: 13px;
+  }
+
   &:hover,
   &:focus {
     background-color: $hover-color;
-    color: #fff;
+    color: $white-font-color;
   }
 
-  &:hover .cow-svg,
-  &:focus .cow-svg {
-    fill: #fff;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: $hover-color;
+  //   color: #fff;
+  // }
+
+  // &:hover .cow-svg,
+  // &:focus .cow-svg {
+  //   fill: #fff;
+  // }
 }
 
 .cow-description__btn-svg {
