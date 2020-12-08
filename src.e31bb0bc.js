@@ -189,10 +189,24 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\arrow.svg":[["arrow.305c14c2.svg","images/arrow.svg"],"images/arrow.svg"],"./..\\images\\arrow-white.svg":[["arrow-white.06acb568.svg","images/arrow-white.svg"],"images/arrow-white.svg"],"./..\\images\\header-pointer.svg":[["header-pointer.3f9d492b.svg","images/header-pointer.svg"],"images/header-pointer.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
+
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
 },{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -221,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59676" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61332" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
