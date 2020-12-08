@@ -1918,12 +1918,31 @@ p {
   border: none;
   transition: color 200ms linear, background-color 200ms linear, fill 200ms linear;
 }
+.cow-description__btn::after {
+  content: "";
+  display: inline-block;
+  background: url("/arrow.305c14c2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7px;
+  height: 10px;
+  margin-left: 13px;
+}
+.cow-description__btn:hover::after, .cow-description__btn:focus::after {
+  content: "";
+  display: inline-block;
+  background: url("/arrow-white.06acb568.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7px;
+  height: 10px;
+  margin-left: 13px;
+}
 .cow-description__btn:hover, .cow-description__btn:focus {
   background-color: #d41443;
-  color: #fff;
-}
-.cow-description__btn:hover .cow-svg, .cow-description__btn:focus .cow-svg {
-  fill: #fff;
+  color: #ffffff;
 }
 
 .cow-description__btn-svg {
