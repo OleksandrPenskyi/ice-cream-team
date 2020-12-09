@@ -98,6 +98,16 @@ a{
     font-size: 12px;
     line-height: 186%;
     color: #000000;
+    @media screen and(min-width:768px) {
+        // margin-top: 60px;
+        font-size: 14px;
+        line-height: 186%;
+    }
+    @media screen and(min-width:1280px) {
+        // margin-top: 60px;
+        font-size: 16px;
+        line-height: 186%;
+    }
 }
 .contacts{
     margin-top: 40px;
@@ -231,8 +241,8 @@ a{
         padding-left: 40px;
         padding-right: 40px;
         width: 330px;
-        padding-top: 51px;
-        padding-bottom: 62px;
+        padding-top: 52px;
+        padding-bottom: 61px;
     }
     background-color: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -243,10 +253,10 @@ a{
         border-bottom: 1px solid #E1E1E1;
         top: 177px;
         @media screen and(min-width:768px) {
-            top: 243px;
+            top: 253px;
         }
         @media screen and(min-width:1280px){
-            top: 232px;
+            top: 242px;
             width: 234px;
         }
         width: 179px;
@@ -258,10 +268,10 @@ a{
         border-bottom: 1px solid #E1E1E1;
         top: 322px;
         @media screen and(min-width:768px) {
-            top: 416px;
+            top: 426px;
         }
         @media screen and(min-width:1280px){
-            top: 429px;
+            top: 438px;
             width: 234px;
         }
         width: 179px;
