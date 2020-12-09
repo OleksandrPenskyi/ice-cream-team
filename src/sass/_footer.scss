@@ -12,16 +12,19 @@ a{
 .btn-1{
     width: 126px;
     height: 44px;
-    fill: #D41443;
+    fill: $hover-color;
 }
 .btn-2{
     width: 97px;
     height: 44px;
-    fill: #D41443;
+    fill: $hover-color;
 }
 .locations{
     margin-bottom: 10px;
     &:hover .btn-1{
+        fill: #FFFFFF;
+    }
+    &:focus .btn-1{
         fill: #FFFFFF;
     }
     @media screen and(min-width:768px) {
@@ -44,6 +47,9 @@ a{
 .franchise:hover .btn-2{
     fill: #FFFFFF;
 }
+.franchise:focus .btn-2{
+    fill: #FFFFFF;
+}
 
 
 .locations,
@@ -61,7 +67,11 @@ a{
     background-color: #FFFFFF;
     border-radius: 22px;
     &:hover{
-        background-color: #D41443;
+        background-color: $hover-color;
+        cursor: pointer;
+    }
+    &:focus{
+        background-color: $hover-color;
         cursor: pointer;
     }
 }
@@ -82,7 +92,7 @@ a{
     justify-content: center;
 }
 .date{
-    font-family: DM Sans;
+    font-family:$text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -103,7 +113,7 @@ a{
 }
 .phone,
 .email{
-    font-family: DM Sans;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -113,7 +123,7 @@ a{
 .fact-date{
     // margin-top: 25px;
     margin-bottom: 10px;
-    font-family: DM Sans;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -138,7 +148,7 @@ a{
         margin-bottom: 64px;
         font-size: 16px;
     }
-    font-family: DM Sans;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -151,7 +161,7 @@ a{
     width: 80px;
     height: 16px;
     background-color: #F0D1A5;
-    font-family: DM Sans;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -178,7 +188,7 @@ a{
     }
 }
 .region{
-    font-family: DM Sans;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -298,12 +308,13 @@ a{
         &:hover .footer-link{
             fill: tomato;
         }
+        &:focus .footer-link{
+            fill: tomato;
+        }
         .footer-link{
             fill: #FEA5BB;
             width: 18px;
             height: 18px;
-            // width: 20px;
-            // height: 20px;
         }
     }
     .back{
@@ -349,6 +360,12 @@ a{
         width: 1280px;
         padding-left: 115px;
         padding-right: 115px;
+        background-image: url('../images/sectionbg2.png');
+        background-position: 50% 20%;
+        background-repeat: no-repeat;
+        @media screen and(min-resolution: 2dppx) {
+            background-image: url('../images/sectionbg2@2x.png');
+        }
     }
 }
 .story-container{
@@ -411,7 +428,7 @@ a{
     position: relative;
     width: 157px;
     height: 239px;
-    font-family: DM Sans;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -493,7 +510,7 @@ a{
     fill: #C7133E;
 }
 .emily{
-    font-family: DM Sans, sans-serif;
+    font-family: $text-font;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -551,7 +568,7 @@ a{
     }
 }
 .footer-text{
-    font-family: DM Sans, sans-serif;
+    font-family: $text-font;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -583,7 +600,7 @@ a{
     border-top: 1px solid #E1E1E1 ;
 }
 .title-h1{
-    font-family: Titan One;
+    font-family: $title-font;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -607,14 +624,14 @@ a{
 .title-h2{
     width: 200px;
     text-align: left;
-    font-family: Titan One;
+    font-family: $title-font;
     font-style: normal;
     font-weight: normal;
     font-size: 34px;
     line-height: 39px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: $hover-color;
     @media screen and(min-width:768px){
         width: 340px;
         font-size: 48px;
@@ -631,7 +648,7 @@ a{
     text-align: right;
     // padding-bottom: 43px;
     text-align: right;
-    font-family: DM Sans, sans-serif;
+    font-family: $text-font;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -643,7 +660,7 @@ a{
     }
 }
 .tel-span{
-    color: #D41443;
+    color:$hover-color ;
     margin-left: 4px;
 }
 .social-contacts{
